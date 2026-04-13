@@ -21,6 +21,12 @@ int main(int argc, char** argv) {
     example *e = malloc(arr_size*sizeof(example));
 
     printf("%d \n", sizeof(e->a));
+    printf("%d \n", sizeof(e->b));
+    printf("%d \n", sizeof(e->c));
+    printf("%d \n", sizeof(e->d));
+    printf("%d \n", sizeof(e->e));
+    printf("%d \n", sizeof(e->f));
+
 
     for(int i=0; i<arr_size; i++) {
         init_struct(&e[i]);
