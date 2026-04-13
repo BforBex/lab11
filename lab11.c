@@ -19,6 +19,9 @@ const int ITER_COUNT = 300000000;
 int main(int argc, char** argv) {
     int arr_size = atoi(argv[1]);
     example *e = malloc(arr_size*sizeof(example));
+
+    print("%d \n", sizeof(e->a));
+    
     for(int i=0; i<arr_size; i++) {
         init_struct(&e[i]);
     }
